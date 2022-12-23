@@ -8,6 +8,22 @@
 
 ### 기능 목록
 
-- [ ] MovieItem 컴포넌트
+- [x] MovieItem 컴포넌트
+  - [x] img, title, year, body, category
 - [ ] MovieList 컴포넌트
+
+<br>
+
 - [ ] 데이터 useEffect 와 useState로 받기
+
+<br>
+
+- [ ] MovieItem Css
+- [ ] MovieList Css
+
+<br>
+
+- [ ] Movie.html 페이지
+
+- [ ] MovieItem Click Event
+  - [ ] Movie.html 연결
