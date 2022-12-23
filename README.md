@@ -17,7 +17,7 @@
 
 <br>
 
-- [ ] MovieItem Css
+- [x] MovieItem Css
 - [ ] MovieList Css
 
 <br>
