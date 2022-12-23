@@ -14,7 +14,7 @@ function MovieList() {
         setData(_data.data.movies);
       });
   }, []);
-  //aaa
+  //aaaa
   return (
     <div className={styles.MovieList}>
       {data.map((item) => {
