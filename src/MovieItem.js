@@ -5,7 +5,8 @@ function MovieItem({ img, title, year, body, category }) {
   return (
     <li className={styles.MovieItem}>
       <img className={styles.MovieItem_Img} src={img} />
-      <div>
+
+      <div className={styles.MovieItem_Infor}>
         <h2 className={styles.MovieItem_Title}>{title}</h2>
         <p className={styles.MovieItem_Year}>{year}</p>
         <p className={styles.MovieItem_Body}>{body}</p>

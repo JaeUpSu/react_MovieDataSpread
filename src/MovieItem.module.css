@@ -3,13 +3,23 @@
   background-color: white;
   display: flex;
   position: relative;
-  margin: 50px;
+
+  width: 650px;
+  height: 340px;
+  margin: 50px 10px;
+}
+
+.MovieItem_Infor {
+  margin-right: 10px;
 }
 
 .MovieItem_Img {
+  position: relative;
+  top: -50px;
+  left: 20px;
   width: 200px;
-  height: 300px;
-  margin-right: 120px;
+  height: 310px;
+  margin-right: 100px;
 }
 
 .MovieItem_Title {
@@ -25,4 +35,16 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
   overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .MovieItem_Body {
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MovieItem_Body {
+    -webkit-line-clamp: 1;
+  }
 }

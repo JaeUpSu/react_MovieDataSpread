@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieItem from "./MovieItem";
+import styles from "./MovieList.module.css";
 
 function MovieList() {
   const [data, setData] = useState([]);
@@ -10,12 +11,11 @@ function MovieList() {
     )
       .then((res) => res.json())
       .then((_data) => {
-        console.log(_data.data.movies);
         setData(_data.data.movies);
       });
   }, []);
   return (
-    <div>
+    <div className={styles.MovieList}>
       {data.map((item) => {
         return (
           <MovieItem
