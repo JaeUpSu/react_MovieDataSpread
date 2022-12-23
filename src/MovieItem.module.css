@@ -1,4 +1,5 @@
 .MovieItem {
+  cursor: pointer;
   list-style: none;
   background-color: white;
   display: flex;
@@ -7,6 +8,11 @@
   width: 650px;
   height: 340px;
   margin: 50px 10px;
+}
+
+.MovieItem:hover {
+  background-color: lightsalmon;
+  opacity: 0.8;
 }
 
 .MovieItem_Infor {
