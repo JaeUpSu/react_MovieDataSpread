@@ -24,5 +24,5 @@
 
 - [ ] Movie.html 페이지
 
-- [ ] MovieItem Click Event
-  - [ ] Movie.html 연결
+- [x] MovieItem Click Event
+  - [x] Movie.html 연결
