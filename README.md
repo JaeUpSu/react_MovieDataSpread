@@ -22,7 +22,7 @@
 
 <br>
 
-- [ ] Movie.html 페이지
+- [x] Movie.html 페이지
 
 - [x] MovieItem Click Event
   - [x] Movie.html 연결

@@ -1,3 +1,5 @@
 .Movie {
-  margin: 0 auto;
+  text-align: center;
+  padding: 200px;
+  background-color: lightsalmon;
 }
