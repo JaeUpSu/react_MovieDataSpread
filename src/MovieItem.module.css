@@ -1,0 +1,28 @@
+.MovieItem {
+  list-style: none;
+  background-color: white;
+  display: flex;
+  position: relative;
+  margin: 50px;
+}
+
+.MovieItem_Img {
+  width: 200px;
+  height: 300px;
+  margin-right: 120px;
+}
+
+.MovieItem_Title {
+  margin-bottom: 0;
+}
+
+.MovieItem_Year {
+  margin-top: 0;
+}
+
+.MovieItem_Body {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}

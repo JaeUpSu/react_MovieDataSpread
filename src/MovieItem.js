@@ -1,12 +1,15 @@
+import styles from "./MovieItem.module.css";
 function MovieItem({ img, title, year, body, category }) {
+  const categoryString = category.join(" ");
+
   return (
-    <li>
-      <img src={img} />
+    <li className={styles.MovieItem}>
+      <img className={styles.MovieItem_Img} src={img} />
       <div>
-        <h2>{title}</h2>
-        <p>{year}</p>
-        <p>{body}</p>
-        <p>{category}</p>
+        <h2 className={styles.MovieItem_Title}>{title}</h2>
+        <p className={styles.MovieItem_Year}>{year}</p>
+        <p className={styles.MovieItem_Body}>{body}</p>
+        <p>{categoryString}</p>
       </div>
     </li>
   );
