@@ -10,14 +10,10 @@ function MovieItem({ id, img, title, year, body, category, rating }) {
 
   const calcStarRates = () => {
     let tempStarRateArr = [0, 0, 0, 0, 0];
+
     // 별 한개당 width 가 20점, 총 100점 만점 현재 비율
     let starVerScore = rating * 10;
     let idx = 0;
-
-    if (year === 2018) {
-      console.log("CHECK");
-      starVerScore = 10;
-    }
 
     // 20을 starVerScore 에서 하나씩 빼가면서 별 하나하나에 채워질 width 지정
     while (starVerScore > 20) {
@@ -56,6 +52,7 @@ function MovieItem({ id, img, title, year, body, category, rating }) {
         <p>{categoryString}</p>
 
         {STARS.map((item, index) => {
+          console.log(`${index} => ${rates[index]}`);
           return (
             // 별, 비어있게 하는 기본값
             <svg
@@ -66,18 +63,26 @@ function MovieItem({ id, img, title, year, body, category, rating }) {
               viewBox="0 0 20 13"
               fill="#cacaca"
             >
-              <clipPath id={`${item}StarClip`}>
+              {/*
+               클리핑 처리할 요소, id 를 참조하면 클리핑 처리 
+               클리핑, 다른 파트에서 정의 요소의 일부를 제거
+              */}
+              <clipPath id={`${id}-${item}StarClip`}>
                 <rect width={`${rates[index]}`} height="39" />
               </clipPath>
+
+              {/* SVG 기본 도형 라이브러리에서 가장 강력한 요소
+              선과 곡선, 호 등 다양한 형태로 그리기 가능 */}
               <path
-                id={`${item}Star`}
+                id={`${id}-${item}Star`}
                 d="M9,2l2.163,4.279L16,6.969,12.5,10.3l.826,4.7L9,12.779,4.674,15,5.5,10.3,2,6.969l4.837-.69Z"
                 transform="translate(-2 -2)"
               />
+
               {/* clipPath 를 사용하기 위한 태그, 색 채우기 */}
               <use
-                clipPath={`url(#${item}StarClip)`}
-                href={`#${item}Star`}
+                clipPath={`url(#${id}-${item}StarClip)`}
+                href={`#${id}-${item}Star`}
                 fill="#966fd6"
               />
             </svg>
