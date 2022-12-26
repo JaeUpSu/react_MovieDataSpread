@@ -11,21 +11,24 @@ function MovieList() {
     )
       .then((res) => res.json())
       .then((_data) => {
+        console.log(_data);
         setData(_data.data.movies);
       });
   }, []);
-  //aaaaaa
+
   return (
     <div className={styles.MovieList}>
       {data.map((item) => {
         return (
           <MovieItem
             key={item.id}
+            id={item.id}
             img={item.large_cover_image}
             title={item.title}
             year={item.year}
             body={item.description_full}
             category={item.genres}
+            rating={item.rating}
           />
         );
       })}
