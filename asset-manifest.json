@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_MovieDataSpread/public/static/css/main.ab405540.css",
+    "main.js": "/react_MovieDataSpread/public/static/js/main.08a15098.js",
+    "index.html": "/react_MovieDataSpread/public/index.html",
+    "main.ab405540.css.map": "/react_MovieDataSpread/public/static/css/main.ab405540.css.map",
+    "main.08a15098.js.map": "/react_MovieDataSpread/public/static/js/main.08a15098.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab405540.css",
+    "static/js/main.08a15098.js"
+  ]
+}
