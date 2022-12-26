@@ -5,9 +5,9 @@ function Movie() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const imgUrl = location.state.img.img;
-  const title = location.state.title.title;
-  const body = location.state.body.body;
+  const imgUrl = location.state.img;
+  const title = location.state.title;
+  const body = location.state.body;
 
   const goHome = () => {
     navigate("/");

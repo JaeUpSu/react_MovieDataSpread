@@ -31,16 +31,16 @@ function MovieItem({ id, img, title, year, body, category, rating }) {
   };
 
   useEffect(() => {
+    setRates((rates) => (rates = calcStarRates()));
     console.log(rates);
-    setRates(calcStarRates());
   }, []);
 
   const goMovie = () => {
     navigate(`/movie/${id}`, {
       state: {
-        img: { img },
-        title: { title },
-        body: { body },
+        img: img,
+        title: title,
+        body: body,
       },
     });
   };
